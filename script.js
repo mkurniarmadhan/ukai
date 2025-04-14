@@ -1,12 +1,12 @@
 const questions = [
-  // {
-  //   question: "DO YOU LOVE ME",
-  //   optionA: "Tekanan darah sistolik > 100 mmHg",
-  //   optionB: "Tekanan darah di atas 120/80 mmHg",
-  //   optionC: "Tekanan darah sistolik ≥ 140 mmHg dan/atau diastolik ≥ 90 mmHg",
-  //   optionD: "Tekanan darah < 90/60 mmHg",
-  //   correctOption: "optionC",
-  // },
+  {
+    question: "DO YOU LOVE ME ?",
+    optionA: "YA",
+    optionB:"YA",
+    optionC: "YA",
+    optionD: "YA",
+    correctOption: "optionC",
+  },
   // {
   //   question:
   //     "Obat golongan apa yang paling sering digunakan sebagai lini pertama terapi hipertensi?",
