@@ -1,100 +1,100 @@
 const questions = [
-  {
-    question: "Apa definisi hipertensi menurut WHO?",
-    optionA: "Tekanan darah sistolik > 100 mmHg",
-    optionB: "Tekanan darah di atas 120/80 mmHg",
-    optionC: "Tekanan darah sistolik ≥ 140 mmHg dan/atau diastolik ≥ 90 mmHg",
-    optionD: "Tekanan darah < 90/60 mmHg",
-    correctOption: "optionC",
-  },
-  {
-    question:
-      "Obat golongan apa yang paling sering digunakan sebagai lini pertama terapi hipertensi?",
-    optionA: "NSAID",
-    optionB: "Antibiotik",
-    optionC: "Antasida",
-    optionD: "ACE Inhibitor",
-    correctOption: "optionD",
-  },
+  // {
+  //   question: "DO YOU LOVE ME",
+  //   optionA: "Tekanan darah sistolik > 100 mmHg",
+  //   optionB: "Tekanan darah di atas 120/80 mmHg",
+  //   optionC: "Tekanan darah sistolik ≥ 140 mmHg dan/atau diastolik ≥ 90 mmHg",
+  //   optionD: "Tekanan darah < 90/60 mmHg",
+  //   correctOption: "optionC",
+  // },
+  // {
+  //   question:
+  //     "Obat golongan apa yang paling sering digunakan sebagai lini pertama terapi hipertensi?",
+  //   optionA: "NSAID",
+  //   optionB: "Antibiotik",
+  //   optionC: "Antasida",
+  //   optionD: "ACE Inhibitor",
+  //   correctOption: "optionD",
+  // },
 
-  {
-    question:
-      "Manakah dari obat berikut ini termasuk golongan calcium channel blocker?",
-    optionA: "Amlodipin",
-    optionB: "Captopril",
-    optionC: "Losartan",
-    optionD: "Furosemid",
-    correctOption: "optionA",
-  },
+  // {
+  //   question:
+  //     "Manakah dari obat berikut ini termasuk golongan calcium channel blocker?",
+  //   optionA: "Amlodipin",
+  //   optionB: "Captopril",
+  //   optionC: "Losartan",
+  //   optionD: "Furosemid",
+  //   correctOption: "optionA",
+  // },
 
-  {
-    question:
-      "Efek samping yang paling umum dari penggunaan ACE inhibitor seperti captopril adalah?",
-    optionA: "Diare",
-    optionB: "Batuk kering",
-    optionC: "Penglihatan kabur",
-    optionD: "Insomnia",
-    correctOption: "optionB",
-  },
+  // {
+  //   question:
+  //     "Efek samping yang paling umum dari penggunaan ACE inhibitor seperti captopril adalah?",
+  //   optionA: "Diare",
+  //   optionB: "Batuk kering",
+  //   optionC: "Penglihatan kabur",
+  //   optionD: "Insomnia",
+  //   correctOption: "optionB",
+  // },
 
-  {
-    question: "Berikut ini adalah faktor risiko utama hipertensi, KECUALI?",
-    optionA: "Usia lanjut",
-    optionB: "Diet tinggi garam",
-    optionC: "Aktivitas fisik teratur",
-    optionD: "Riwayat keluarga hipertensi",
-    correctOption: "optionC",
-  },
+  // {
+  //   question: "Berikut ini adalah faktor risiko utama hipertensi, KECUALI?",
+  //   optionA: "Usia lanjut",
+  //   optionB: "Diet tinggi garam",
+  //   optionC: "Aktivitas fisik teratur",
+  //   optionD: "Riwayat keluarga hipertensi",
+  //   correctOption: "optionC",
+  // },
 
-  {
-    question:
-      "Apa target tekanan darah yang direkomendasikan untuk pasien hipertensi tanpa komorbid menurut JNC 8?",
-    optionA: "< 120/80 mmHg",
-    optionB: "< 130/80 mmHg",
-    optionC: "< 140/90 mmHg",
-    optionD: "< 150/100 mmHg",
-    correctOption: "optionC",
-  },
+  // {
+  //   question:
+  //     "Apa target tekanan darah yang direkomendasikan untuk pasien hipertensi tanpa komorbid menurut JNC 8?",
+  //   optionA: "< 120/80 mmHg",
+  //   optionB: "< 130/80 mmHg",
+  //   optionC: "< 140/90 mmHg",
+  //   optionD: "< 150/100 mmHg",
+  //   correctOption: "optionC",
+  // },
 
-  {
-    question:
-      "Pasien dengan hipertensi dan diabetes sebaiknya diobati dengan target tekanan darah di bawah?",
-    optionA: "160/100 mmHg",
-    optionB: "150/90 mmHg",
-    optionC: "140/90 mmHg",
-    optionD: "130/80 mmHg",
-    correctOption: "optionD",
-  },
+  // {
+  //   question:
+  //     "Pasien dengan hipertensi dan diabetes sebaiknya diobati dengan target tekanan darah di bawah?",
+  //   optionA: "160/100 mmHg",
+  //   optionB: "150/90 mmHg",
+  //   optionC: "140/90 mmHg",
+  //   optionD: "130/80 mmHg",
+  //   correctOption: "optionD",
+  // },
 
-  {
-    question:
-      "Obat manakah yang termasuk dalam golongan angiotensin receptor blocker (ARB)?",
-    optionA: "Nifedipin",
-    optionB: "Captopril",
-    optionC: "Losartan",
-    optionD: "Bisoprolol",
-    correctOption: "optionC",
-  },
+  // {
+  //   question:
+  //     "Obat manakah yang termasuk dalam golongan angiotensin receptor blocker (ARB)?",
+  //   optionA: "Nifedipin",
+  //   optionB: "Captopril",
+  //   optionC: "Losartan",
+  //   optionD: "Bisoprolol",
+  //   correctOption: "optionC",
+  // },
 
-  {
-    question:
-      "Hipertensi sekunder dapat disebabkan oleh kondisi berikut, KECUALI?",
-    optionA: "Penyakit ginjal",
-    optionB: "Penyempitan arteri renalis",
-    optionC: "Pheochromocytoma",
-    optionD: "Kelelahan akibat olahraga",
-    correctOption: "optionD",
-  },
+  // {
+  //   question:
+  //     "Hipertensi sekunder dapat disebabkan oleh kondisi berikut, KECUALI?",
+  //   optionA: "Penyakit ginjal",
+  //   optionB: "Penyempitan arteri renalis",
+  //   optionC: "Pheochromocytoma",
+  //   optionD: "Kelelahan akibat olahraga",
+  //   correctOption: "optionD",
+  // },
 
-  {
-    question:
-      "Manakah di bawah ini yang merupakan perubahan gaya hidup yang direkomendasikan untuk pasien hipertensi?",
-    optionA: "Menghindari buah dan sayur",
-    optionB: "Mengonsumsi garam berlebih",
-    optionC: "Berhenti merokok",
-    optionD: "Tidur lebih dari 12 jam/hari",
-    correctOption: "optionC",
-  }
+  // {
+  //   question:
+  //     "Manakah di bawah ini yang merupakan perubahan gaya hidup yang direkomendasikan untuk pasien hipertensi?",
+  //   optionA: "Menghindari buah dan sayur",
+  //   optionB: "Mengonsumsi garam berlebih",
+  //   optionC: "Berhenti merokok",
+  //   optionD: "Tidur lebih dari 12 jam/hari",
+  //   correctOption: "optionC",
+  // }
 ];
 
 let shuffledQuestions = []; //empty array to hold shuffled selected questions out of all available questions
