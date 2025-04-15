@@ -1,100 +1,265 @@
-const questions = [
+// const mikosis = [
+  
+//   // {
+//   //   question: "DO YOU LOVE ME ?",
+//   //   optionA: "YA",
+//   //   optionB:"YA",
+//   //   optionC: "YA",
+//   //   optionD: "YA",
+//   //   correctOption: "optionC",
+//   // },
+//   // {
+//   //   question:
+//   //     "Obat golongan apa yang paling sering digunakan sebagai lini pertama terapi hipertensi?",
+//   //   optionA: "NSAID",
+//   //   optionB: "Antibiotik",
+//   //   optionC: "Antasida",
+//   //   optionD: "ACE Inhibitor",
+//   //   correctOption: "optionD",
+//   // },
+
+//   // {
+//   //   question:
+//   //     "Manakah dari obat berikut ini termasuk golongan calcium channel blocker?",
+//   //   optionA: "Amlodipin",
+//   //   optionB: "Captopril",
+//   //   optionC: "Losartan",
+//   //   optionD: "Furosemid",
+//   //   correctOption: "optionA",
+//   // },
+
+//   // {
+//   //   question:
+//   //     "Efek samping yang paling umum dari penggunaan ACE inhibitor seperti captopril adalah?",
+//   //   optionA: "Diare",
+//   //   optionB: "Batuk kering",
+//   //   optionC: "Penglihatan kabur",
+//   //   optionD: "Insomnia",
+//   //   correctOption: "optionB",
+//   // },
+
+//   // {
+//   //   question: "Berikut ini adalah faktor risiko utama hipertensi, KECUALI?",
+//   //   optionA: "Usia lanjut",
+//   //   optionB: "Diet tinggi garam",
+//   //   optionC: "Aktivitas fisik teratur",
+//   //   optionD: "Riwayat keluarga hipertensi",
+//   //   correctOption: "optionC",
+//   // },
+
+//   // {
+//   //   question:
+//   //     "Apa target tekanan darah yang direkomendasikan untuk pasien hipertensi tanpa komorbid menurut JNC 8?",
+//   //   optionA: "< 120/80 mmHg",
+//   //   optionB: "< 130/80 mmHg",
+//   //   optionC: "< 140/90 mmHg",
+//   //   optionD: "< 150/100 mmHg",
+//   //   correctOption: "optionC",
+//   // },
+
+//   // {
+//   //   question:
+//   //     "Pasien dengan hipertensi dan diabetes sebaiknya diobati dengan target tekanan darah di bawah?",
+//   //   optionA: "160/100 mmHg",
+//   //   optionB: "150/90 mmHg",
+//   //   optionC: "140/90 mmHg",
+//   //   optionD: "130/80 mmHg",
+//   //   correctOption: "optionD",
+//   // },
+
+//   // {
+//   //   question:
+//   //     "Obat manakah yang termasuk dalam golongan angiotensin receptor blocker (ARB)?",
+//   //   optionA: "Nifedipin",
+//   //   optionB: "Captopril",
+//   //   optionC: "Losartan",
+//   //   optionD: "Bisoprolol",
+//   //   correctOption: "optionC",
+//   // },
+
+//   // {
+//   //   question:
+//   //     "Hipertensi sekunder dapat disebabkan oleh kondisi berikut, KECUALI?",
+//   //   optionA: "Penyakit ginjal",
+//   //   optionB: "Penyempitan arteri renalis",
+//   //   optionC: "Pheochromocytoma",
+//   //   optionD: "Kelelahan akibat olahraga",
+//   //   correctOption: "optionD",
+//   // },
+
+//   // {
+//   //   question:
+//   //     "Manakah di bawah ini yang merupakan perubahan gaya hidup yang direkomendasikan untuk pasien hipertensi?",
+//   //   optionA: "Menghindari buah dan sayur",
+//   //   optionB: "Mengonsumsi garam berlebih",
+//   //   optionC: "Berhenti merokok",
+//   //   optionD: "Tidur lebih dari 12 jam/hari",
+//   //   correctOption: "optionC",
+//   // }
+// ];
+
+
+const  questions = [
   {
-    question: "DO YOU LOVE ME ?",
-    optionA: "YA",
-    optionB:"YA",
-    optionC: "YA",
-    optionD: "YA",
+    question: "Manakah obat yang paling efektif untuk menurunkan kadar LDL?",
+    optionA: "Niacin",
+    optionB: "Statin",
+    optionC: "Fibrat",
+    optionD: "Omega-3",
+    correctOption: "optionB",
+  },
+  {
+    question: "Obat pilihan pertama untuk pasien dengan risiko kardiovaskular tinggi dan LDL > 130 mg/dL adalah:",
+    optionA: "Gemfibrozil",
+    optionB: "Ezetimibe",
+    optionC: "Atorvastatin",
+    optionD: "Omega-3",
     correctOption: "optionC",
   },
-  // {
-  //   question:
-  //     "Obat golongan apa yang paling sering digunakan sebagai lini pertama terapi hipertensi?",
-  //   optionA: "NSAID",
-  //   optionB: "Antibiotik",
-  //   optionC: "Antasida",
-  //   optionD: "ACE Inhibitor",
-  //   correctOption: "optionD",
-  // },
-
-  // {
-  //   question:
-  //     "Manakah dari obat berikut ini termasuk golongan calcium channel blocker?",
-  //   optionA: "Amlodipin",
-  //   optionB: "Captopril",
-  //   optionC: "Losartan",
-  //   optionD: "Furosemid",
-  //   correctOption: "optionA",
-  // },
-
-  // {
-  //   question:
-  //     "Efek samping yang paling umum dari penggunaan ACE inhibitor seperti captopril adalah?",
-  //   optionA: "Diare",
-  //   optionB: "Batuk kering",
-  //   optionC: "Penglihatan kabur",
-  //   optionD: "Insomnia",
-  //   correctOption: "optionB",
-  // },
-
-  // {
-  //   question: "Berikut ini adalah faktor risiko utama hipertensi, KECUALI?",
-  //   optionA: "Usia lanjut",
-  //   optionB: "Diet tinggi garam",
-  //   optionC: "Aktivitas fisik teratur",
-  //   optionD: "Riwayat keluarga hipertensi",
-  //   correctOption: "optionC",
-  // },
-
-  // {
-  //   question:
-  //     "Apa target tekanan darah yang direkomendasikan untuk pasien hipertensi tanpa komorbid menurut JNC 8?",
-  //   optionA: "< 120/80 mmHg",
-  //   optionB: "< 130/80 mmHg",
-  //   optionC: "< 140/90 mmHg",
-  //   optionD: "< 150/100 mmHg",
-  //   correctOption: "optionC",
-  // },
-
-  // {
-  //   question:
-  //     "Pasien dengan hipertensi dan diabetes sebaiknya diobati dengan target tekanan darah di bawah?",
-  //   optionA: "160/100 mmHg",
-  //   optionB: "150/90 mmHg",
-  //   optionC: "140/90 mmHg",
-  //   optionD: "130/80 mmHg",
-  //   correctOption: "optionD",
-  // },
-
-  // {
-  //   question:
-  //     "Obat manakah yang termasuk dalam golongan angiotensin receptor blocker (ARB)?",
-  //   optionA: "Nifedipin",
-  //   optionB: "Captopril",
-  //   optionC: "Losartan",
-  //   optionD: "Bisoprolol",
-  //   correctOption: "optionC",
-  // },
-
-  // {
-  //   question:
-  //     "Hipertensi sekunder dapat disebabkan oleh kondisi berikut, KECUALI?",
-  //   optionA: "Penyakit ginjal",
-  //   optionB: "Penyempitan arteri renalis",
-  //   optionC: "Pheochromocytoma",
-  //   optionD: "Kelelahan akibat olahraga",
-  //   correctOption: "optionD",
-  // },
-
-  // {
-  //   question:
-  //     "Manakah di bawah ini yang merupakan perubahan gaya hidup yang direkomendasikan untuk pasien hipertensi?",
-  //   optionA: "Menghindari buah dan sayur",
-  //   optionB: "Mengonsumsi garam berlebih",
-  //   optionC: "Berhenti merokok",
-  //   optionD: "Tidur lebih dari 12 jam/hari",
-  //   correctOption: "optionC",
-  // }
+  {
+    question: "Apa mekanisme kerja statin?",
+    optionA: "Menghambat enzim HMG-CoA reductase",
+    optionB: "Menghambat lipase pankreas",
+    optionC: "Mengaktifkan PPAR-gamma",
+    optionD: "Meningkatkan reabsorpsi kolesterol di usus",
+    correctOption: "optionA",
+  },
+  {
+    question: "Efek samping utama dari statin yang perlu dimonitor adalah:",
+    optionA: "Hipokalemia",
+    optionB: "Miopati",
+    optionC: "Gingivitis",
+    optionD: "Hipoglikemia",
+    correctOption: "optionB",
+  },
+  {
+    question: "Manakah kombinasi obat yang meningkatkan risiko rhabdomiolisis?",
+    optionA: "Statin + Niacin",
+    optionB: "Statin + Fibrat",
+    optionC: "Statin + Ezetimibe",
+    optionD: "Statin + Omega-3",
+    correctOption: "optionB",
+  },
+  {
+    question: "Obat yang paling tepat untuk pasien dengan kadar trigliserida > 500 mg/dL adalah:",
+    optionA: "Statin",
+    optionB: "Niacin",
+    optionC: "Fibrat",
+    optionD: "Ezetimibe",
+    correctOption: "optionC",
+  },
+  {
+    question: "Niacin dapat menyebabkan efek samping berupa:",
+    optionA: "Flushing wajah",
+    optionB: "Konstipasi",
+    optionC: "Peningkatan tekanan darah",
+    optionD: "Hiperkalemia",
+    correctOption: "optionA",
+  },
+  {
+    question: "Pasien datang dengan keluhan nyeri otot hebat setelah menggunakan simvastatin dan gemfibrozil. Kemungkinan komplikasi yang terjadi adalah:",
+    optionA: "Pankreatitis",
+    optionB: "Rhabdomiolisis",
+    optionC: "Hipotiroid",
+    optionD: "Hepatitis akut",
+    correctOption: "optionB",
+  },
+  {
+    question: "Ezetimibe bekerja dengan mekanisme:",
+    optionA: "Inhibitor absorpsi kolesterol di usus halus",
+    optionB: "Stimulasi metabolisme lipid di hati",
+    optionC: "Blokade reseptor LDL",
+    optionD: "Inhibitor lipase jaringan adiposa",
+    correctOption: "optionA",
+  },
+  {
+    question: "Manakah di bawah ini yang merupakan efek utama dari fibrat?",
+    optionA: "Menurunkan LDL secara signifikan",
+    optionB: "Meningkatkan HDL dan menurunkan trigliserida",
+    optionC: "Menurunkan tekanan darah",
+    optionD: "Meningkatkan ekskresi asam empedu",
+    correctOption: "optionB",
+  },
+  {
+    question: "Pasien dengan hiperlipidemia dan gagal hati berat, obat berikut sebaiknya dihindari:",
+    optionA: "Omega-3",
+    optionB: "Statin",
+    optionC: "Fibrat",
+    optionD: "Niacin",
+    correctOption: "optionB",
+  },
+  {
+    question: "Kapan pemeriksaan profil lipid ulang dilakukan setelah memulai terapi statin?",
+    optionA: "1 minggu",
+    optionB: "2 minggu",
+    optionC: "4-6 minggu",
+    optionD: "3 bulan",
+    correctOption: "optionC",
+  },
+  {
+    question: "Manakah perubahan gaya hidup yang direkomendasikan untuk pasien hiperlipidemia?",
+    optionA: "Mengonsumsi lemak trans",
+    optionB: "Berolahraga 150 menit/minggu",
+    optionC: "Berhenti konsumsi serat",
+    optionD: "Menghindari aktivitas fisik",
+    correctOption: "optionB",
+  },
+  {
+    question: "Pasien dengan LDL 190 mg/dL tanpa penyakit lain. Apa terapi awal?",
+    optionA: "Diet saja",
+    optionB: "Fibrat",
+    optionC: "Statin intensif",
+    optionD: "Niacin",
+    correctOption: "optionC",
+  },
+  {
+    question: "Obat penurun lipid yang dapat menyebabkan batu empedu adalah:",
+    optionA: "Statin",
+    optionB: "Fibrat",
+    optionC: "Niacin",
+    optionD: "Ezetimibe",
+    correctOption: "optionB",
+  },
+  {
+    question: "Pasien dengan trigliserida 700 mg/dL dan konsumsi alkohol berat. Terapi awal yang tepat adalah:",
+    optionA: "Statin",
+    optionB: "Niacin",
+    optionC: "Fibrat + modifikasi gaya hidup",
+    optionD: "Ezetimibe",
+    correctOption: "optionC",
+  },
+  {
+    question: "Obat yang paling tepat ditambahkan jika statin tidak cukup menurunkan LDL adalah:",
+    optionA: "Omega-3",
+    optionB: "Niacin",
+    optionC: "Ezetimibe",
+    optionD: "Gemfibrozil",
+    correctOption: "optionC",
+  },
+  {
+    question: "Statin tidak boleh diberikan bersamaan dengan gemfibrozil karena:",
+    optionA: "Mengurangi efektivitas statin",
+    optionB: "Meningkatkan risiko hepatotoksisitas",
+    optionC: "Meningkatkan risiko rhabdomiolisis",
+    optionD: "Menurunkan HDL secara drastis",
+    correctOption: "optionC",
+  },
+  {
+    question: "Efek dari omega-3 terhadap lipid adalah:",
+    optionA: "Meningkatkan LDL dan HDL",
+    optionB: "Menurunkan LDL",
+    optionC: "Menurunkan trigliserida",
+    optionD: "Tidak mempengaruhi profil lipid",
+    correctOption: "optionC",
+  },
+  {
+    question: "Manakah indikasi pemberian statin intensif berdasarkan pedoman?",
+    optionA: "LDL 90 mg/dL + usia muda",
+    optionB: "LDL 120 mg/dL tanpa risiko",
+    optionC: "LDL > 190 mg/dL atau DM usia > 40",
+    optionD: "HDL rendah tanpa faktor risiko",
+    correctOption: "optionC",
+  },
 ];
 
 let shuffledQuestions = []; //empty array to hold shuffled selected questions out of all available questions
@@ -220,13 +385,13 @@ function handleEndGame() {
 
   // condition check for player remark and remark color
   if (playerScore <= 3) {
-    remark = "Bad Grades, Keep Practicing.";
+    remark = "SEMANGAT AYANG";
     remarkColor = "red";
   } else if (playerScore >= 4 && playerScore < 7) {
-    remark = "Average Grades, You can do better.";
+    remark = "AYANG PASTI BISA.";
     remarkColor = "orange";
   } else if (playerScore >= 7) {
-    remark = "Excellent, Keep the good work going.";
+    remark = "BISA YOKK";
     remarkColor = "green";
   }
   const playerGrade = (playerScore / 10) * 100;
