@@ -1,0 +1,553 @@
+// [
+//   {
+//     question: "Pasien laki-laki 24 tahun datang dengan keluhan batuk kering, tenggorokan gatal, dan tidak berdahak. Terapi simptomatik yang paling sesuai adalah:",
+//     optionA: "Ambroksol",
+//     optionB: "Kodein",
+//     optionC: "Deksametason",
+//     optionD: "Guaifenesin",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Seorang wanita 30 tahun datang dengan flu, demam 38,5°C, nyeri otot, dan batuk kering. Terapi simptomatik yang tepat adalah:",
+//     optionA: "Dekstrometorfan + parasetamol",
+//     optionB: "Antibiotik + CTM",
+//     optionC: "Prednison + Ambroksol",
+//     optionD: "Oseltamivir + loratadin",
+//     correctOption: "optionA"
+//   },
+//   {
+//     question: "Obat batuk yang memiliki efek antitusif dan bekerja menekan refleks batuk di pusat batuk otak adalah:",
+//     optionA: "Ambroksol",
+//     optionB: "Bromheksin",
+//     optionC: "Dekstrometorfan",
+//     optionD: "Guaifenesin",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Seorang anak menderita asma dan sering kambuh saat pilek. Terapi pencegahan jangka panjang yang tepat adalah:",
+//     optionA: "Prednison oral harian",
+//     optionB: "Deksametason injeksi",
+//     optionC: "Flutikason inhalasi",
+//     optionD: "Salbutamol oral",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Efek samping yang umum ditemukan pada penggunaan deksametason jangka panjang adalah:",
+//     optionA: "Hipotensi",
+//     optionB: "Osteoporosis",
+//     optionC: "Hipokalemia",
+//     optionD: "Hiperpigmentasi",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Pasien menderita batuk berdahak kental selama 5 hari. Obat mukolitik yang paling sesuai adalah:",
+//     optionA: "Kodein",
+//     optionB: "Ambroksol",
+//     optionC: "CTM",
+//     optionD: "Dekstrometorfan",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Manakah dari berikut ini yang merupakan kontraindikasi relatif penggunaan steroid sistemik?",
+//     optionA: "Hipoglikemia",
+//     optionB: "Penyakit autoimun",
+//     optionC: "Infeksi jamur sistemik",
+//     optionD: "Eksaserbasi asma",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Oseltamivir bekerja optimal jika diberikan dalam waktu berapa lama sejak onset gejala flu?",
+//     optionA: "< 12 jam",
+//     optionB: "< 24 jam",
+//     optionC: "< 48 jam",
+//     optionD: "< 72 jam",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Steroid pilihan untuk edema serebri akibat tumor otak adalah:",
+//     optionA: "Flutikason",
+//     optionB: "Prednison",
+//     optionC: "Deksametason",
+//     optionD: "Hidrokortison",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Pasien dengan rhinitis alergi kronis sering menggunakan flutikason topikal. Risiko efek samping yang mungkin timbul adalah:",
+//     optionA: "Atrofi mukosa nasal",
+//     optionB: "Depresi berat",
+//     optionC: "Asidosis metabolik",
+//     optionD: "Gagal ginjal",
+//     correctOption: "optionA"
+//   },
+//   {
+//     question: "Seorang pria datang dengan flu dan ingin cepat sembuh agar bisa bekerja. Dokter menjelaskan bahwa flu disebabkan oleh virus dan terapi utamanya adalah:",
+//     optionA: "Antibiotik spektrum luas",
+//     optionB: "Steroid sistemik",
+//     optionC: "Simptomatik dan istirahat",
+//     optionD: "Oseltamivir untuk semua kasus",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Steroid berikut yang memiliki potensi paling kuat secara sistemik adalah:",
+//     optionA: "Hidrokortison",
+//     optionB: "Prednison",
+//     optionC: "Deksametason",
+//     optionD: "Budesonid",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Seorang pasien minum prednison 30 mg/hari selama 3 minggu. Apa yang harus diperhatikan saat menghentikan terapi?",
+//     optionA: "Langsung stop",
+//     optionB: "Turunkan dosis bertahap",
+//     optionC: "Ganti dengan antihistamin",
+//     optionD: "Berikan antibiotik sebagai pengganti",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Manakah kombinasi yang paling tepat untuk pasien batuk pilek disertai alergi dan hidung tersumbat?",
+//     optionA: "Guaifenesin + Oseltamivir",
+//     optionB: "CTM + Pseudoefedrin",
+//     optionC: "Paracetamol + Steroid oral",
+//     optionD: "Ambroksol + Antibiotik",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Pasien diberikan deksametason injeksi untuk mengatasi eksaserbasi asma akut. Mekanisme utama obat ini adalah:",
+//     optionA: "Vasodilatasi bronkial",
+//     optionB: "Menekan respons imun dan inflamasi",
+//     optionC: "Menurunkan produksi lendir",
+//     optionD: "Meningkatkan kerja surfaktan",
+//     correctOption: "optionB"
+//   }
+// ]
+
+
+
+// // const mikosis = [
+  
+// //   // {
+// //   //   question: "DO YOU LOVE ME ?",
+// //   //   optionA: "YA",
+// //   //   optionB:"YA",
+// //   //   optionC: "YA",
+// //   //   optionD: "YA",
+// //   //   correctOption: "optionC",
+// //   // },
+// //   // {
+// //   //   question:
+// //   //     "Obat golongan apa yang paling sering digunakan sebagai lini pertama terapi hipertensi?",
+// //   //   optionA: "NSAID",
+// //   //   optionB: "Antibiotik",
+// //   //   optionC: "Antasida",
+// //   //   optionD: "ACE Inhibitor",
+// //   //   correctOption: "optionD",
+// //   // },
+
+// //   // {
+// //   //   question:
+// //   //     "Manakah dari obat berikut ini termasuk golongan calcium channel blocker?",
+// //   //   optionA: "Amlodipin",
+// //   //   optionB: "Captopril",
+// //   //   optionC: "Losartan",
+// //   //   optionD: "Furosemid",
+// //   //   correctOption: "optionA",
+// //   // },
+
+// //   // {
+// //   //   question:
+// //   //     "Efek samping yang paling umum dari penggunaan ACE inhibitor seperti captopril adalah?",
+// //   //   optionA: "Diare",
+// //   //   optionB: "Batuk kering",
+// //   //   optionC: "Penglihatan kabur",
+// //   //   optionD: "Insomnia",
+// //   //   correctOption: "optionB",
+// //   // },
+
+// //   // {
+// //   //   question: "Berikut ini adalah faktor risiko utama hipertensi, KECUALI?",
+// //   //   optionA: "Usia lanjut",
+// //   //   optionB: "Diet tinggi garam",
+// //   //   optionC: "Aktivitas fisik teratur",
+// //   //   optionD: "Riwayat keluarga hipertensi",
+// //   //   correctOption: "optionC",
+// //   // },
+
+// //   // {
+// //   //   question:
+// //   //     "Apa target tekanan darah yang direkomendasikan untuk pasien hipertensi tanpa komorbid menurut JNC 8?",
+// //   //   optionA: "< 120/80 mmHg",
+// //   //   optionB: "< 130/80 mmHg",
+// //   //   optionC: "< 140/90 mmHg",
+// //   //   optionD: "< 150/100 mmHg",
+// //   //   correctOption: "optionC",
+// //   // },
+
+// //   // {
+// //   //   question:
+// //   //     "Pasien dengan hipertensi dan diabetes sebaiknya diobati dengan target tekanan darah di bawah?",
+// //   //   optionA: "160/100 mmHg",
+// //   //   optionB: "150/90 mmHg",
+// //   //   optionC: "140/90 mmHg",
+// //   //   optionD: "130/80 mmHg",
+// //   //   correctOption: "optionD",
+// //   // },
+
+// //   // {
+// //   //   question:
+// //   //     "Obat manakah yang termasuk dalam golongan angiotensin receptor blocker (ARB)?",
+// //   //   optionA: "Nifedipin",
+// //   //   optionB: "Captopril",
+// //   //   optionC: "Losartan",
+// //   //   optionD: "Bisoprolol",
+// //   //   correctOption: "optionC",
+// //   // },
+
+// //   // {
+// //   //   question:
+// //   //     "Hipertensi sekunder dapat disebabkan oleh kondisi berikut, KECUALI?",
+// //   //   optionA: "Penyakit ginjal",
+// //   //   optionB: "Penyempitan arteri renalis",
+// //   //   optionC: "Pheochromocytoma",
+// //   //   optionD: "Kelelahan akibat olahraga",
+// //   //   correctOption: "optionD",
+// //   // },
+
+// //   // {
+// //   //   question:
+// //   //     "Manakah di bawah ini yang merupakan perubahan gaya hidup yang direkomendasikan untuk pasien hipertensi?",
+// //   //   optionA: "Menghindari buah dan sayur",
+// //   //   optionB: "Mengonsumsi garam berlebih",
+// //   //   optionC: "Berhenti merokok",
+// //   //   optionD: "Tidur lebih dari 12 jam/hari",
+// //   //   correctOption: "optionC",
+// //   // }
+// // ];
+
+// const overdosisi=
+//   [
+//     {
+//       question: "Pasien ditemukan tidak sadar dengan depresi napas, miosis, dan riwayat penggunaan heroin. Apa antidotum yang sesuai?",
+//       optionA: "Flumazenil",
+//       optionB: "Atropin",
+//       optionC: "Nalokson",
+//       optionD: "N-asetilsistein",
+//       correctOption: "optionC"
+//     },
+//     {
+//       question: "Seorang pasien overdosis paracetamol, datang 4 jam setelah konsumsi. Antidotum pilihan adalah:",
+//       optionA: "Vitamin K",
+//       optionB: "N-asetilsistein",
+//       optionC: "Fomepizole",
+//       optionD: "Flumazenil",
+//       correctOption: "optionB"
+//     },
+//     {
+//       question: "Pasien dengan overdosis warfarin mengalami perdarahan aktif. Apa terapi yang paling tepat?",
+//       optionA: "Protamin sulfat",
+//       optionB: "Vitamin B6",
+//       optionC: "Vitamin K",
+//       optionD: "Atropin",
+//       correctOption: "optionC"
+//     },
+//     {
+//       question: "Flumazenil adalah antidotum yang bekerja sebagai antagonis pada reseptor:",
+//       optionA: "Muskarinik",
+//       optionB: "Benzodiazepin",
+//       optionC: "Opioid",
+//       optionD: "Histamin",
+//       correctOption: "optionB"
+//     },
+//     {
+//       question: "Pasien keracunan metanol, terapi paling efektif untuk mencegah toksisitas adalah:",
+//       optionA: "Arang aktif",
+//       optionB: "Vitamin K",
+//       optionC: "Fomepizole",
+//       optionD: "Piridoksin",
+//       correctOption: "optionC"
+//     }
+//   , {
+//     question: "Seorang petani mengalami kejang, hipersalivasi, dan pupil yang sangat kecil setelah menyemprot pestisida. Terapi pertama yang harus diberikan adalah:",
+//     optionA: "Flumazenil",
+//     optionB: "N-asetilsistein",
+//     optionC: "Atropin",
+//     optionD: "Vitamin K",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Pasien mengalami keracunan digoksin dengan aritmia ventrikel. Antidotum spesifik yang digunakan adalah:",
+//     optionA: "Fomepizole",
+//     optionB: "Digibind",
+//     optionC: "Flumazenil",
+//     optionD: "Atropin",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Seorang anak minum cairan pembersih yang mengandung etilen glikol. Terapi paling tepat adalah:",
+//     optionA: "N-asetilsistein",
+//     optionB: "Etanol atau Fomepizole",
+//     optionC: "Vitamin K",
+//     optionD: "Nalokson",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Pasien dengan overdosis isoniazid datang dengan kejang refrakter. Apa antidotum pilihan?",
+//     optionA: "Piridoksin",
+//     optionB: "Vitamin C",
+//     optionC: "Atropin",
+//     optionD: "Fomepizole",
+//     correctOption: "optionA"
+//   },
+//   {
+//     question: "Antidotum yang digunakan untuk keracunan logam berat seperti timbal adalah:",
+//     optionA: "Nalokson",
+//     optionB: "Dimercaprol atau EDTA",
+//     optionC: "Vitamin B6",
+//     optionD: "Flumazenil",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Antidotum Protamin sulfat digunakan untuk mengatasi efek dari:",
+//     optionA: "Warfarin",
+//     optionB: "Heparin",
+//     optionC: "Timbal",
+//     optionD: "Opioid",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Pasien dengan riwayat bunuh diri minum cairan pemutih. Penanganan awal yang paling tepat adalah:",
+//     optionA: "Induksi muntah",
+//     optionB: "Pemberian arang aktif",
+//     optionC: "Dekontaminasi kulit",
+//     optionD: "Tidak memberi arang aktif dan observasi saluran cerna",
+//     correctOption: "optionD"
+//   },
+//   {
+//     question: "Pemberian flumazenil sebagai antidotum harus hati-hati karena risiko:",
+//     optionA: "Syok anafilaksis",
+//     optionB: "Aritmia jantung",
+//     optionC: "Kejang pada pasien dengan adiksi benzodiazepin",
+//     optionD: "Hipertermia",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Keracunan karbon monoksida memerlukan terapi berupa:",
+//     optionA: "N-asetilsistein",
+//     optionB: "100% Oksigen atau oksigen hiperbarik",
+//     optionC: "Vitamin K",
+//     optionD: "Etanol",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Seorang pria ditemukan dengan napas berbau seperti alkohol dan asidosis metabolik. Kecurigaan utama adalah keracunan:",
+//     optionA: "Paracetamol",
+//     optionB: "Opioid",
+//     optionC: "Metanol",
+//     optionD: "Benzodiazepin",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Seorang pasien mengalami keracunan sianida. Antidotum yang digunakan adalah:",
+//     optionA: "Fomepizole",
+//     optionB: "Oksigen hiperbarik",
+//     optionC: "Natrium nitrit + natrium tiosulfat",
+//     optionD: "Vitamin B6",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Arang aktif paling efektif diberikan dalam waktu:",
+//     optionA: "24 jam setelah konsumsi racun",
+//     optionB: "Setelah timbul gejala",
+//     optionC: "1 jam pertama setelah paparan",
+//     optionD: "Setelah muntah dihentikan",
+//     correctOption: "optionC"
+//   },
+//   {
+//     question: "Pemberian Vitamin K sebagai antidotum dapat digunakan dalam kasus keracunan:",
+//     optionA: "Aspirin",
+//     optionB: "Warfarin",
+//     optionC: "Heparin",
+//     optionD: "Paracetamol",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Pasien overdosis heparin mengalami perdarahan aktif. Antidotum paling tepat adalah:",
+//     optionA: "Vitamin K",
+//     optionB: "Protamin sulfat",
+//     optionC: "Atropin",
+//     optionD: "Flumazenil",
+//     correctOption: "optionB"
+//   },
+//   {
+//     question: "Apa fungsi dari pralidoksim pada keracunan insektisida organofosfat?",
+//     optionA: "Menghambat ACh",
+//     optionB: "Menghambat GABA",
+//     optionC: "Regenerasi enzim AChE",
+//     optionD: "Meningkatkan ekskresi ginjal",
+//     correctOption: "optionC"
+//   }
+  
+// ]
+
+// const  hiperlipid = [
+//   {
+//     question: "Manakah obat yang paling efektif untuk menurunkan kadar LDL?",
+//     optionA: "Niacin",
+//     optionB: "Statin",
+//     optionC: "Fibrat",
+//     optionD: "Omega-3",
+//     correctOption: "optionB",
+//   },
+//   {
+//     question: "Obat pilihan pertama untuk pasien dengan risiko kardiovaskular tinggi dan LDL > 130 mg/dL adalah:",
+//     optionA: "Gemfibrozil",
+//     optionB: "Ezetimibe",
+//     optionC: "Atorvastatin",
+//     optionD: "Omega-3",
+//     correctOption: "optionC",
+//   },
+//   {
+//     question: "Apa mekanisme kerja statin?",
+//     optionA: "Menghambat enzim HMG-CoA reductase",
+//     optionB: "Menghambat lipase pankreas",
+//     optionC: "Mengaktifkan PPAR-gamma",
+//     optionD: "Meningkatkan reabsorpsi kolesterol di usus",
+//     correctOption: "optionA",
+//   },
+//   {
+//     question: "Efek samping utama dari statin yang perlu dimonitor adalah:",
+//     optionA: "Hipokalemia",
+//     optionB: "Miopati",
+//     optionC: "Gingivitis",
+//     optionD: "Hipoglikemia",
+//     correctOption: "optionB",
+//   },
+//   {
+//     question: "Manakah kombinasi obat yang meningkatkan risiko rhabdomiolisis?",
+//     optionA: "Statin + Niacin",
+//     optionB: "Statin + Fibrat",
+//     optionC: "Statin + Ezetimibe",
+//     optionD: "Statin + Omega-3",
+//     correctOption: "optionB",
+//   },
+//   {
+//     question: "Obat yang paling tepat untuk pasien dengan kadar trigliserida > 500 mg/dL adalah:",
+//     optionA: "Statin",
+//     optionB: "Niacin",
+//     optionC: "Fibrat",
+//     optionD: "Ezetimibe",
+//     correctOption: "optionC",
+//   },
+//   {
+//     question: "Niacin dapat menyebabkan efek samping berupa:",
+//     optionA: "Flushing wajah",
+//     optionB: "Konstipasi",
+//     optionC: "Peningkatan tekanan darah",
+//     optionD: "Hiperkalemia",
+//     correctOption: "optionA",
+//   },
+//   {
+//     question: "Pasien datang dengan keluhan nyeri otot hebat setelah menggunakan simvastatin dan gemfibrozil. Kemungkinan komplikasi yang terjadi adalah:",
+//     optionA: "Pankreatitis",
+//     optionB: "Rhabdomiolisis",
+//     optionC: "Hipotiroid",
+//     optionD: "Hepatitis akut",
+//     correctOption: "optionB",
+//   },
+//   {
+//     question: "Ezetimibe bekerja dengan mekanisme:",
+//     optionA: "Inhibitor absorpsi kolesterol di usus halus",
+//     optionB: "Stimulasi metabolisme lipid di hati",
+//     optionC: "Blokade reseptor LDL",
+//     optionD: "Inhibitor lipase jaringan adiposa",
+//     correctOption: "optionA",
+//   },
+//   {
+//     question: "Manakah di bawah ini yang merupakan efek utama dari fibrat?",
+//     optionA: "Menurunkan LDL secara signifikan",
+//     optionB: "Meningkatkan HDL dan menurunkan trigliserida",
+//     optionC: "Menurunkan tekanan darah",
+//     optionD: "Meningkatkan ekskresi asam empedu",
+//     correctOption: "optionB",
+//   },
+//   {
+//     question: "Pasien dengan hiperlipidemia dan gagal hati berat, obat berikut sebaiknya dihindari:",
+//     optionA: "Omega-3",
+//     optionB: "Statin",
+//     optionC: "Fibrat",
+//     optionD: "Niacin",
+//     correctOption: "optionB",
+//   },
+//   {
+//     question: "Kapan pemeriksaan profil lipid ulang dilakukan setelah memulai terapi statin?",
+//     optionA: "1 minggu",
+//     optionB: "2 minggu",
+//     optionC: "4-6 minggu",
+//     optionD: "3 bulan",
+//     correctOption: "optionC",
+//   },
+//   {
+//     question: "Manakah perubahan gaya hidup yang direkomendasikan untuk pasien hiperlipidemia?",
+//     optionA: "Mengonsumsi lemak trans",
+//     optionB: "Berolahraga 150 menit/minggu",
+//     optionC: "Berhenti konsumsi serat",
+//     optionD: "Menghindari aktivitas fisik",
+//     correctOption: "optionB",
+//   },
+//   {
+//     question: "Pasien dengan LDL 190 mg/dL tanpa penyakit lain. Apa terapi awal?",
+//     optionA: "Diet saja",
+//     optionB: "Fibrat",
+//     optionC: "Statin intensif",
+//     optionD: "Niacin",
+//     correctOption: "optionC",
+//   },
+//   {
+//     question: "Obat penurun lipid yang dapat menyebabkan batu empedu adalah:",
+//     optionA: "Statin",
+//     optionB: "Fibrat",
+//     optionC: "Niacin",
+//     optionD: "Ezetimibe",
+//     correctOption: "optionB",
+//   },
+//   {
+//     question: "Pasien dengan trigliserida 700 mg/dL dan konsumsi alkohol berat. Terapi awal yang tepat adalah:",
+//     optionA: "Statin",
+//     optionB: "Niacin",
+//     optionC: "Fibrat + modifikasi gaya hidup",
+//     optionD: "Ezetimibe",
+//     correctOption: "optionC",
+//   },
+//   {
+//     question: "Obat yang paling tepat ditambahkan jika statin tidak cukup menurunkan LDL adalah:",
+//     optionA: "Omega-3",
+//     optionB: "Niacin",
+//     optionC: "Ezetimibe",
+//     optionD: "Gemfibrozil",
+//     correctOption: "optionC",
+//   },
+//   {
+//     question: "Statin tidak boleh diberikan bersamaan dengan gemfibrozil karena:",
+//     optionA: "Mengurangi efektivitas statin",
+//     optionB: "Meningkatkan risiko hepatotoksisitas",
+//     optionC: "Meningkatkan risiko rhabdomiolisis",
+//     optionD: "Menurunkan HDL secara drastis",
+//     correctOption: "optionC",
+//   },
+//   {
+//     question: "Efek dari omega-3 terhadap lipid adalah:",
+//     optionA: "Meningkatkan LDL dan HDL",
+//     optionB: "Menurunkan LDL",
+//     optionC: "Menurunkan trigliserida",
+//     optionD: "Tidak mempengaruhi profil lipid",
+//     correctOption: "optionC",
+//   },
+//   {
+//     question: "Manakah indikasi pemberian statin intensif berdasarkan pedoman?",
+//     optionA: "LDL 90 mg/dL + usia muda",
+//     optionB: "LDL 120 mg/dL tanpa risiko",
+//     optionC: "LDL > 190 mg/dL atau DM usia > 40",
+//     optionD: "HDL rendah tanpa faktor risiko",
+//     correctOption: "optionC",
+//   },
+// ];
+
